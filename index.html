@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,10 +8,12 @@
 <body>
     <h1>Servidor Web ESP32</h1>
 
-    Encender el LED 1 <a href=\"/R\">ROJO</a>.<br>
-    Encender el LED 1 <a href=\"/Y\">AMARILLO</a>.<br>
-    Encender el LED 2 <a href=\"/G\">VERDE</a>.<br>
-    Encender el LED 2 <a href=\"/B\">AZUL</a>.<br>  
+    <form action="#" method="post">
+        <input type="submit" name="color" value="ROJO">
+        <input type="submit" name="color" value="AMARILLO">
+        <input type="submit" name="color" value="VERDE">
+        <input type="submit" name="color" value="AZUL">
+    </form>
 </body>
 
 </html>
