@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Servidor Web ESP32</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #result {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+</style>
 </head>
-
 <body>
-    <h1>Servidor Web ESP32</h1>
+    <h2>Simple Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter number 1">
+    <input type="number" id="num2" placeholder="Enter number 2">
+    <button onclick="addNumbers()">Add</button>
+    <div id="result"></div>
 
-    <form action="#" method="post">
-        <input type="submit" name="color" value="ROJO">
-        <input type="submit" name="color" value="AMARILLO">
-        <input type="submit" name="color" value="VERDE">
-        <input type="submit" name="color" value="AZUL">
-    </form>
+    <script>
+        function addNumbers() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result = num1 + num2;
+            document.getElementById('result').innerText = 'Result: ' + result;
+        }
+    </script>
 </body>
-
 </html>
+
 
